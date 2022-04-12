@@ -12,14 +12,7 @@ export default function LandingPage() {
     <header style={HeaderStyle}>
       <button className="primary-button" onClick={() => loginWithRedirect()}>
         Admin Dashboard
-      </button>
-      <h1 className="main-title text-center">AV Cloud</h1>
-      <p className="subheading">One-stop AV renting platform</p>
-      <div className="buttons text-center">
-        <Link to="/login">
-          <button size="sm" className="primary-button">
-            <span>log in</span>
-          </button>
+     
         </Link>
         <Link to="/register">
           <button className="primary-button" id="reg_btn">
