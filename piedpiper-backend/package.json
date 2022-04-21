@@ -1,0 +1,24 @@
+{
+  "name": "piedpiper-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gopinathsjsu/team-project-piedpiper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gopinathsjsu/team-project-piedpiper/issues"
+  },
+  "homepage": "https://github.com/gopinathsjsu/team-project-piedpiper#readme",
+  "dependencies": {
+    "jsonfile": "^6.1.0",
+    "moment": "^2.29.3",
+    "simple-git": "^3.7.1"
+  }
+}
