@@ -1,0 +1,50 @@
+.reward{
+    background-color: seashell;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    top: 105px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.reward > h2{
+    background-color: seashell;
+}
+
+.card_class{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+    background: blanchedalmond;
+    font-family: 'Andada Pro', serif;
+    font-family: 'Raleway', sans-serif;
+    height: 25%;
+    top:30%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 15px;
+}
+
+/* .card_class > h2{
+   
+} */
+.card_class > span{
+    margin-left: 30%;
+    font-size: 30px;
+}
+
+.home__section {
+    display: flex;
+    padding: 30px;
+    background-color: seashell !important;
+  }

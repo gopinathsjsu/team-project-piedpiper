@@ -1,0 +1,6 @@
+.home__section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #eeac99;
+  }

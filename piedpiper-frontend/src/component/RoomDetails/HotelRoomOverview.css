@@ -1,0 +1,202 @@
+/* .roomoverview {
+    display: flex;
+    padding: 0 40px;
+    position: relative;
+    height: 2136px;
+} */
+
+.cards {
+    display: flex;
+}
+
+.left-card {
+    margin-left: 50px;
+    padding-top: 40px;
+    box-shadow: rgba(74, 82, 90, 0.2) 0px 8px 24px;
+    width: 50%;
+    /* background-color: brown; */
+}
+
+.right-card {
+    box-shadow: rgba(74, 82, 90, 0.2) 0px 8px 24px;
+    width:38%;
+    /* border: 1px solid black; */
+    position: sticky;
+    right: 80px;
+    /* top: 10px; */
+    height: fit-content;
+    margin-left: 20px;
+}
+
+.display-image img {
+    height:500px;
+    width:70%;
+    margin-Left:100px
+}
+.display-image {
+    display:flex
+}
+
+.hotel-info {
+    padding: auto;
+    margin-left: 50px;
+}
+
+.Amenities {
+    padding: auto;
+    margin-left: 100px;
+}
+
+.hotel-rules {
+    padding: auto;
+    margin-left: 100px;
+}
+
+.health-rules {
+    padding: auto;
+    margin-left: 100px;
+}
+
+.places-hotel {
+    display: flex;
+    
+}
+.places-left {
+    margin-left: 100px;
+}
+.places-right{
+    margin-left: 100px;
+}
+
+.detail-page-login{
+    padding: 0px 10px;
+    background-color: #D72E60;
+    color: white;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.heading-card {
+    background-color: rgb(221, 66, 66);
+    color: white;
+    height: 40px;
+    padding-left: 180px;
+    padding-top: 10px;
+}
+.date-div {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    justify-content: space-between;
+    font-weight: 500;
+    padding: 15px;
+    padding-top: 20px;
+    height: 20px;
+    display: flex;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.payment-card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 82%;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.coupon-icon{
+    height: 25px;
+    padding: 3px;
+    margin-right: 9px;
+}
+.coupon-icon +p{
+    font-size: 13px;
+}
+.coupon-div{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+}
+.green{
+    margin:3px 10px;
+}
+
+.coupon-flex {
+    display: flex;
+}
+
+.more-offers{
+    margin: 0px;
+    font-weight: 500;
+    border: 1px solid #1AB64F;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5PX 10PX;
+    color: #1AB64F;
+    background-color: #D1F0DC;
+    margin-left: 50px;
+}
+
+.wizard-div{
+    font-size: 13px;
+}
+.wizard-div p{
+    margin-left: 10px;
+}
+
+.continue-btn{
+    width: 320px;
+    border: none;
+    background-color: #1AB64F;
+    color: white;
+    font-weight: 700;
+    height: 40px;
+    margin-left:100px ;
+    border-radius: 5px;
+}
+
+.redFont{
+    color: red;
+    /* font-weight: 500; */
+    margin-left: 40px;
+    padding-bottom: 30px;
+}
+
+.guest-policies {
+    font-size: 10px;
+    margin-left: 100px;
+    color:lightslategray
+}
+/* .payment-card {
+    padding-bottom: 50px;
+    margin:20px;
+    margin-top: 20px;
+    margin-left: 70px;
+    /* background-color: #df5151; */
+    /* border: none;
+    border-radius: 7px;
+    color: coral;
+    /* font-weight: 500; */
+    /* height: 10px; */
+    /* font-size: 40px; */
+    /* width: 70%; */
+/* } */ 
+/* .detail-page-login img{
+    width: 20px;
+    margin-right: 10px;
+} */
+/* .detail-page-login button{
+    background-color: #F58875;
+    border: none;
+    color: white;
+    font-weight: 500;
+    height: 25px;
+    margin-right: 20px;
+    font-size: 13px;
+    padding:0px 10px;
+    width: 50%;
+} */

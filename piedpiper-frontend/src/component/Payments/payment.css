@@ -1,0 +1,50 @@
+.your-details {
+    margin-left: 50px;
+    padding-top: 40px;
+    box-shadow: rgba(74, 82, 90, 0.2) 0px 8px 24px;
+    width: 50%;
+    padding: 15px;
+}
+
+.your-details input {
+    padding: 5px;
+}
+.name-data {
+    display: flex;
+    margin-left: 45px;
+    padding-right: 20px;
+}
+
+.contact-details {
+    margin-left: 43px;
+}
+
+.payment-details {
+    margin-left: 50px;
+    padding-top: 40px;
+    box-shadow: rgba(74, 82, 90, 0.2) 0px 8px 24px;
+    width: 50%;
+    padding: 15px;
+}
+
+.card-details {
+    margin-left: 43px;
+    padding-top: 10px;
+}
+
+.card-details input {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.confirm-btn {
+    width: 150px;
+    border: none;
+    background-color: #1AB64F;
+    color: white;
+    font-weight: 700;
+    height: 40px;
+    margin-left:50px ;
+    border-radius: 5px;
+    margin-top: 20px;
+}
