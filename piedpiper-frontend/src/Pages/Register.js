@@ -34,10 +34,10 @@ export default function RegisterPage() {
     Axios.post("http://localhost:8001/register", data)
       .then((response) => {
         console.log(response.data.message);
-        if (response.data.message == "ok") {
-          window.alert("Successfully registered");
-          window.location.href = "/login";
-        }
+        // if (response.data.message == "ok") {
+        //   window.alert("Successfully registered");
+        //   window.location.href = "/login";
+        // }
       })
       .catch((err) => {
         console.log(err);
@@ -52,13 +52,13 @@ export default function RegisterPage() {
         <p>
           <label>First Name</label>
           <br />
-          <input
+          {/* <input
             type="text"
             name="first_name"
             onChange={(e) => setFname(e.target.value)}
             required
           />
-        </p>
+        </p> */}
 
         <p>
           <label>Last Name</label>
