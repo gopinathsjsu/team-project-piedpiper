@@ -5,8 +5,7 @@ import Axios from "axios";
 export default function LoginPage() {
   const [user_name, setUname] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [message, setMessage] = useState("");
+
   function onSubmit(e) {
     e.preventDefault();
     let data = {
@@ -17,9 +16,9 @@ export default function LoginPage() {
       .then((response) => {
         console.log(response);
         console.log(response.data.message);
-        // if (response.statusText == "OK") {
-        //   setMessage(response.data.message);
-        // } else setMessage(response.data.message);
+        if (response.statusText == "OK") {
+          setMessage(response.data.message);
+        } else setMessage(response.data.message);
       })
       .catch((err) => {
         console.log(err);
@@ -28,9 +27,7 @@ export default function LoginPage() {
 
   let redirectVar = null;
   if (message === "AV User ok") {
-    // console.log("AV User Ok from frontend");
-    // localStorage.setItem("username", user_name);
-    // alert(`Logged in successfully, welcome ${user_name}!`);
+
     redirectVar = <Redirect to="/homeUser" />;
   } else if (message === "AV Owner ok") {
     localStorage.setItem("username", user_name);
@@ -43,10 +40,7 @@ export default function LoginPage() {
 
   return (
     <div id="Login" style={HeaderStyle}>
-      <div className="text-center m-5-auto">
-        {redirectVar}
-        <h2 className="main-para">Sign in</h2>
-        <form onSubmit={onSubmit}>
+      
           <p>
             <label>Username or email address</label>
             <br />
