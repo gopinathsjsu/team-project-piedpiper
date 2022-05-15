@@ -9,11 +9,11 @@
 		<version>2.6.4</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.hotel.groupproject</groupId>
-	<artifactId>hotel-booking</artifactId>
+	<groupId>com.piedpiper</groupId>
+	<artifactId>pipedpiper-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hotel-booking</name>
-	<description>search hotel</description>
+	<description>Hotel Booking Application</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
