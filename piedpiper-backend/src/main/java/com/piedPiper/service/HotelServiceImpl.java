@@ -38,20 +38,12 @@ public class HotelServiceImpl implements HotelService {
 	@Autowired
 	public BookingRepository bookingRepository;
 
-	/* saving all the public holidays */
-	// Mon, Jan 17, 2022
 	private LocalDate Martin_Luther_King_day = LocalDate.of(2022, 1, 17);
-	// Mon, May 30, 2022
 	private LocalDate Memorial_day = LocalDate.of(2022, 5, 30);
-	// Mon, Jul 4, 2022
 	private LocalDate Independence_day = LocalDate.of(2022, 7, 04);
-	// Mon, Sep 5, 2022
 	private LocalDate Labor_day = LocalDate.of(2022, 9, 05);
-	// Fri, Nov 11, 2022
 	private LocalDate Veterans_day = LocalDate.of(2022, 11, 11);
-	// Thu, Nov 24, 2022
 	private LocalDate ThanksGiving_day = LocalDate.of(2022, 11, 24);
-	// Mon, Dec 26, 2022
 	private LocalDate Christmas_day = LocalDate.of(2022, 12, 26);
 
 	@Autowired
@@ -95,33 +87,22 @@ public class HotelServiceImpl implements HotelService {
 
 		if (!bookingDetailList.isEmpty() && null != bookingDetailList) {
 			for (Reservation bookingDetails2 : bookingDetailList) {
-
-				/*
-				 * If the customer is an existing customer then increase his reward points by
-				 * 100 for everybooking...There will be one unique emailId per customer.
-				 */
 				if (reservation.getEmailID().equalsIgnoreCase(bookingDetails2.getEmailID())) {
-
 					reservation.setRewardpoints(bookingDetails2.getRewardpoints() + 100);
 				}
 			}
 		}
-		// bookingRepository.save(bookingDetails);
 
 		return bookingResponseDetailsbuilder.buildResponse(reservation);
 
 	}
 
 	public List<Reservation> getAllBookingDetails() {
-
 		return (List<Reservation>) bookingRepository.findAll();
-
 	}
 
 	public Reservation deleteBookingDetails(String reservationID) {
-
 		return bookingRepository.deleteByReservationID(reservationID);
-
 	}
 
 	public ResponseEntity<Reservation> updateBookingDetails(String reservationID, Reservation reservation) {

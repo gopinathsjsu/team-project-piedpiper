@@ -1,0 +1,15 @@
+version : "3"
+services:
+ mymongodb:
+  image: mongo:latest
+  container_name:  "mymongodb"
+  ports:
+   - 27017:27017
+   
+ HotelBooking:
+   image: hotel-booking:1.0
+   container_name: "hotel-booking"
+   ports:
+    - 8080:8080
+   links:
+    - mymongodb
