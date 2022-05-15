@@ -1,0 +1,30 @@
+.searchPage__info {
+    justify-content: center;
+    margin-left: 400px;
+    padding: 20px;
+  }
+
+.searchPage__info > p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.searchPage__info > h1 {
+    margin-bottom: 30px;
+}
+
+.searchPage__info > h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 559px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+}
+
+.searchPage > h2{
+text-align: center;
+margin-top: 10px;}
+

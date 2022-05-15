@@ -1,0 +1,9 @@
+.book__section {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 550px);
+    background-image: url('../../Asset/ff.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

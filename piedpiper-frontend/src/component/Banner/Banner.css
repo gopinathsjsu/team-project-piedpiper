@@ -1,0 +1,47 @@
+.banner {
+    background: url("http://cdn.home-designing.com/wp-content/uploads/2016/09/classical-dark-bedroom-style.jpg") center center;
+    height: 50vh;
+    position: relative;
+    background-color: #eeac99;
+  }
+
+.banner__info {
+    background-color: transparent;
+    color: white;
+    padding-top: 15vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    width: 300px;
+    margin-left: 75%;
+}
+
+.banner__search {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__searchButton {
+  background-color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  color: black !important;
+}
+
+.banner__info > button {
+    background-color: goldenrod;
+    color: white;
+    text-transform: inherit;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.banner__info > button:hover {
+    background-color: white;
+    color: #ff7779;
+  }
+  
+
+.banner__info > h5 {
+    margin-top: 10px;
+}

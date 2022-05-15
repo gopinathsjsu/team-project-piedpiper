@@ -1,0 +1,26 @@
+.Detail__price {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+.Detail__price > button {
+    border-radius: 30px;
+    text-transform: inherit;
+    margin: 0px;
+  }
+
+  .Detail__price > button {
+    position: absolute;
+    left: -150px;
+    top: -20px;
+    text-transform: inherit !important;
+    background-color: #ff7779;
+    color: white;
+    width: 10vw;
+  }
+
+.Detail__price > button:hover {
+    background-color: white;
+    color: #ff7779;
+}
+
