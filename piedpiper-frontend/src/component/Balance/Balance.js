@@ -41,7 +41,7 @@ function Balance() {
             />
             <Card
                 src="uber.png"
-                title="UBER"
+                title="Night Club Pass"
                 description="Claim Reward here"
             />
         </div>
