@@ -92,7 +92,7 @@ function Bookingdetails() {
     const users=userData.map((dataU)=>{
         return (
           <Bookcard
-                 src={room}
+                 src={dataU.roomType}
                  from_date ={dataU.fromDate}
                  to_date = {dataU.toDate}
                  description={dataU.reservationID}
