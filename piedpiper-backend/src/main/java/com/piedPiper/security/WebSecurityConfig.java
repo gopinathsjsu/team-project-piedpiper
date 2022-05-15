@@ -28,8 +28,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	JwtTokenGenerator jwtTokenGenerator;
 	
 	 public void addCorsMappings(CorsRegistry registry) {
-	        registry.addMapping("/**");
-	    }
+		 registry.addMapping("/**")
+		 .allowedOrigins()
+		 .allowedMethods("PUT", "GET", "DELETE", "OPTIONS", "PATCH", "POST");
+    }
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -40,17 +42,27 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.httpBasic().disable().csrf().disable().sessionManagement()
-				.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().authorizeRequests()
-				.antMatchers("/api/auth/signin").permitAll().antMatchers("/api/auth/signup").permitAll()
-				.antMatchers("/api/products/**").hasAuthority("ADMIN").anyRequest().authenticated().and().csrf()
-				.disable().exceptionHandling().authenticationEntryPoint(unauthorizedEntryPoint()).and()
-				.apply(new JwtConfigurer(jwtTokenGenerator));
+		http.cors()
+		.and()
+		.httpBasic()
+		.disable().csrf().disable().sessionManagement()
+		.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().authorizeRequests()
+		.antMatchers("/api/auth/signin").permitAll().antMatchers("/api/auth/signup").permitAll()
+		.antMatchers("/api/products/**").hasAuthority("ADMIN").anyRequest().authenticated().and().csrf()
+		.disable().exceptionHandling().authenticationEntryPoint(unauthorizedEntryPoint()).and()
+		.apply(new JwtConfigurer(jwtTokenGenerator));
 	}
 
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-		web.ignoring().antMatchers("/hotel-booking/getBooking","/api/**","/resources/**", "/static/**", "/css/**", "/js/**", "/images/**");
+		web.ignoring().antMatchers("/hotel-booking/getBooking",
+				"/api/**", 
+				"/resources/**", 
+				"/static/**", 
+				"/css/**", 
+				"/js/**", 
+				"/hotel-booking/createBooking",
+				"/images/**");
 	}
 
 	@Bean
