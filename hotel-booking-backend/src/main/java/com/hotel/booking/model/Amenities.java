@@ -1,5 +1,6 @@
 package com.hotel.booking.model;
 
+
 public class Amenities {
     private boolean dailyContinentalBreakfast = false;
     private boolean fitnessRoomAccess = false;
