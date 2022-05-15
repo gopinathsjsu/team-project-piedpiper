@@ -1,0 +1,17 @@
+.employeepage > button{
+    margin-left: 300px !important;
+    padding: 15px;
+    background-color: #ff7779;
+}
+
+.employeepage{
+    padding: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+.employeepage > h2{
+    margin-left: 400px;
+    font-family: 'Andada Pro', serif;
+    font-family: 'Raleway', sans-serif;
+}
