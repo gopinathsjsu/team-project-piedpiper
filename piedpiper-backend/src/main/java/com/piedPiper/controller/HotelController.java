@@ -25,8 +25,8 @@ import com.piedpiper.repository.HotelRepository;
 import com.piedpiper.service.HotelServiceImpl;
 
 @RestController
+@CrossOrigin(origins = "*", maxAge = 40000)
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000", maxAge = 40000)
 public class HotelController {
 
 	@Autowired
@@ -77,7 +77,6 @@ public class HotelController {
 	}
 
 	@PostMapping("/employee/register")
-	@CrossOrigin(origins = "http://localhost:3000")
 	public String registerEmployee(@Valid @RequestBody Employee employee) {
 
 		Employee employeeExists = employeeRepository.findUserByEmail(employee.getEmail());
@@ -91,7 +90,6 @@ public class HotelController {
 	}
 
 	@PostMapping("/employee/login")
-	@CrossOrigin(origins = "http://localhost:3000")
 	public String employeeLogin(@Valid @RequestBody EmployeeAuthenticationRequest employee) {
 
 		Employee employeeExists = employeeRepository.findUserByEmail(employee.getEmail());

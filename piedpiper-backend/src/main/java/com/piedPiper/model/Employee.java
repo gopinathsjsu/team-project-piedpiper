@@ -1,5 +1,7 @@
 package com.piedpiper.model;
 
+import java.io.Serializable;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
@@ -13,10 +15,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 @Document(collection = "employees")
-public class Employee {
+public class Employee implements Serializable {
+
+	private static final long serialVersionUID = -5627846374155454050L;
 
 	@Id
 	private String _id;
@@ -61,6 +64,8 @@ public class Employee {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
+	
+	public Employee() {}
 
 	public Employee(String userName, String password, String phoneNumber, String email) {
 		this.userName = userName;

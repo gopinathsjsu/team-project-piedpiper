@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.piedpiper</groupId>
-	<artifactId>pipedpiper-backend</artifactId>
+	<artifactId>piedpiper-backend</artifactId>
 	<version>1.0</version>
 	<name>hotel-booking</name>
 	<description>Hotel Booking Application</description>

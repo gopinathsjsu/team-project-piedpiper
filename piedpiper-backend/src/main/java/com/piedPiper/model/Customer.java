@@ -1,5 +1,6 @@
 package com.piedpiper.model;
 
+import java.io.Serializable;
 import java.util.Set;
 
 import javax.validation.constraints.NotBlank;
@@ -11,29 +12,38 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 @Document(collection = "customers")
-public class Customer {
+public class Customer implements Serializable {
+
+	private static final long serialVersionUID = 4059731142023901911L;
 
 	@Id
 	private String _id;
 
 	@NotBlank(message = "username is mandatory")
+	@JsonProperty("username")
 	private String username;
 
 	@NotBlank(message = "password is mandatory")
+	@JsonProperty("password")
 	private String password;
 	
 	@NotBlank(message = "phoneNumber is mandatory")
+	@JsonProperty("phoneNumber")
 	@Pattern(regexp="(^$|[0-9]{10})", message = "should be min of 10 digits")
 	private String phoneNumber;
 
+
+	public Customer() {
+	}
 
 	/**
 	 * @return the _id
@@ -64,6 +74,7 @@ public class Customer {
 	}
 
 	@Indexed(unique = true, direction = IndexDirection.DESCENDING, dropDups = true)
+	@JsonProperty("email")
 	private String email;
 	
 	@DBRef

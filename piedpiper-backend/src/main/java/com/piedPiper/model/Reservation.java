@@ -18,7 +18,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 @Document(collection = "reservations")
 public class Reservation implements Serializable {
@@ -44,6 +43,9 @@ public class Reservation implements Serializable {
 	private int numberOfRooms;
 	private int price;
 	private Amenities amenities;
+	public Reservation() {
+		// TODO Auto-generated constructor stub
+	}
 	
 
 	public String getReservationID() {

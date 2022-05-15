@@ -27,7 +27,7 @@ import com.piedpiper.security.JwtTokenGenerator;
 import com.piedpiper.service.CustServiceImpl;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000", maxAge = 40000)
+@CrossOrigin(origins = "*", maxAge = 40000)
 @RequestMapping("/api/auth")
 @SuppressWarnings("rawtypes")
 public class AuthController {
@@ -44,7 +44,6 @@ public class AuthController {
 	@Autowired
 	private CustServiceImpl custService;
 
-	@CrossOrigin(origins = "http://localhost:3000")
 	@PostMapping("/signin")
 	public ResponseEntity signin(@Valid @RequestBody CustomerAuthenticationRequest data) {
 		try {
@@ -61,7 +60,6 @@ public class AuthController {
 		}
 	}
 
-	@CrossOrigin(origins = "http://localhost:3000")
 	@PostMapping("/signup")
 	public ResponseEntity signup(@Valid @RequestBody Customer customer) {
 		Customer customerexists = custService.findUserByEmail(customer.getEmail());

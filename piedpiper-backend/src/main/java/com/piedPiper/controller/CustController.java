@@ -27,8 +27,9 @@ import com.piedpiper.repository.HotelRepository;
 import com.piedpiper.service.CustServiceImpl;
 import com.piedpiper.service.HotelServiceImpl;
 
-@CrossOrigin(origins = "*")
+
 @RestController
+@CrossOrigin(origins = "*", maxAge = 40000)
 @RequestMapping("/hotel-booking")
 public class CustController {
 

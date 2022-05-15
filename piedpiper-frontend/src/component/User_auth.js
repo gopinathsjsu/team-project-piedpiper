@@ -1,13 +1,10 @@
 import { ConstructionOutlined } from "@mui/icons-material";
 import axios from "axios";
-const URL = "http://localhost:8080/api/auth/"
+const URL = "http://54.67.87.208:8080/api/auth/"
 const API_URL = "/api/auth/";
-const API_book = "http://localhost:8080/hotel-booking/";
+const API_book = "http://54.67.87.208:8080/hotel-booking/";
 const API_searchHotel = "/api/searchHotel/";
 
-
-//axios.defaults.proxy.host = "http://localhost"
-//axios.defaults.proxy.port = "8086"
 
 class AuthService {
   //To_Login User
@@ -58,7 +55,7 @@ class AuthService {
     //return Promise.resolve(localStorage.setItem("user", "Shreyansh"))
     console.log("Getting booking")
     return axios
-      .post('http://localhost:8080/' + "api/employee/login", {
+      .post('http://54.67.87.208:8080/' + "api/employee/login", {
         email,
         password
       })
@@ -74,7 +71,7 @@ class AuthService {
   //To_register Employee
   employeeregister( username, email, password, phoneNumber) {
     console.log("8888888888888888888888")
-    return axios.post('http://localhost:8080/'+"api/employee/register", {
+    return axios.post('http://54.67.87.208:8080/'+"api/employee/register", {
       username,
       email,
       password,
@@ -87,7 +84,7 @@ class AuthService {
   //To_getBooking for Employee
   getBookingEmployee(){
     return axios
-        .get('http://localhost:8080/'+"api/getBooking")
+        .get('http://54.67.87.208:8080/'+"api/getBooking")
           .then(response => {
                   console.log(response)
                    return response;
@@ -96,7 +93,7 @@ class AuthService {
 
   getHotelLocation(location){
     return axios
-    .get('http://localhost:8080/api/searchHotel/'+location)
+    .get('http://54.67.87.208:8080/api/searchHotel/'+location)
       .then(response => {
         console.log("********************")
 
@@ -107,7 +104,7 @@ class AuthService {
   //To_AddHotel Employee
   postemployeeHotel(location,hotelName,id){
     return axios
-      .post('http://localhost:8080/' + "api/savehotel", {
+      .post('http://54.67.87.208:8080/' + "api/savehotel", {
         location,
         hotelName,
         id

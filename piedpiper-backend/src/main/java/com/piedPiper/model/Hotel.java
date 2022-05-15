@@ -1,5 +1,7 @@
 package com.piedpiper.model;
 
+import java.io.Serializable;
+
 import javax.validation.constraints.Size;
 
 import org.springframework.data.annotation.Id;
@@ -9,16 +11,20 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 
-@NoArgsConstructor
 @AllArgsConstructor
 @Document(collection = "hotels")
-public class Hotel {
+public class Hotel implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2196077244562400188L;
 	@Size(min=2, max=30)
 	private String hotelName;
 	@Id
 	private String id;
 	private String location;
+	public Hotel() {}
 	/**
 	 * @return the hotelName
 	 */
