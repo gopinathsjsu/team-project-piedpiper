@@ -21,8 +21,8 @@ public class Employee {
 	@Id
 	private String _id;
 
-	@NotBlank(message = "userName is mandatory")
-	private String userName;
+	@NotBlank(message = "username is mandatory")
+	private String username;
 
 	@NotBlank(message = "password is mandatory")
 	private String password;
@@ -63,7 +63,7 @@ public class Employee {
 	}
 
 	public Employee(String userName, String password, String phoneNumber, String email) {
-		this.userName = userName;
+		this.username = userName;
 		this.password = password;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
@@ -80,11 +80,11 @@ public class Employee {
 	}
 
 	public String getUsername() {
-		return userName;
+		return username;
 	}
 
 	public void setUsername(String username) {
-		this.userName = username;
+		this.username = username;
 	}
 
 	public String getPassword() {

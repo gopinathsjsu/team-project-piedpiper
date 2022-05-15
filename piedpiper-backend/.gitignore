@@ -1,5 +1,2 @@
-.DS_Store
-target/
-bin/
-.settings/
-.classpath	
+target/*
+node_modules

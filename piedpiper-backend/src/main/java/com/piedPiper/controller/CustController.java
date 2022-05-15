@@ -27,8 +27,8 @@ import com.piedpiper.repository.HotelRepository;
 import com.piedpiper.service.CustServiceImpl;
 import com.piedpiper.service.HotelServiceImpl;
 
-@CrossOrigin(origins = "*")
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/hotel-booking")
 public class CustController {
 
@@ -41,7 +41,6 @@ public class CustController {
 	@Autowired
 	public CustRepo custRepo;
 
-	@Autowired
 	public HotelServiceImpl hotelservice;
 
 	@Autowired
@@ -77,6 +76,7 @@ public class CustController {
 
 	}
 
+	@CrossOrigin(origins = "http://localhost:3000")
 	@GetMapping("/getBooking/{emailID}")
 	public List<Reservation> getBookingOfCustomer(@Valid @PathVariable("emailID") String emailID) {
 
