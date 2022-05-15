@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.piedpiper</groupId>
 	<artifactId>pipedpiper-backend</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>hotel-booking</name>
 	<description>Hotel Booking Application</description>
 	<properties>
