@@ -36,12 +36,12 @@ function Balance() {
             />
             <Card
                 src="ebay.png"
-                title="eBay"
+                title="Premium Liqueur"
                 description="Claim Reward here"
             />
             <Card
                 src="uber.png"
-                title="UBER"
+                title="Night Club Pass"
                 description="Claim Reward here"
             />
         </div>
