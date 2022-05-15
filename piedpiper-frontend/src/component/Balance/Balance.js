@@ -36,7 +36,7 @@ function Balance() {
             />
             <Card
                 src="ebay.png"
-                title="eBay"
+                title="Premium Liqueur"
                 description="Claim Reward here"
             />
             <Card
