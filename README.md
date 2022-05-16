@@ -47,13 +47,12 @@ https://github.com/gopinathsjsu/team-project-piedpiper/tree/main/UML%20Diagrams
 <img width="821" alt="arch" src="https://user-images.githubusercontent.com/18122083/168495457-39ff3fd2-701a-4901-88fe-6e293d877699.png">
 
 ### 2. Class Diagram
+![image](https://user-images.githubusercontent.com/18122083/168536084-db274845-25bf-4b7e-8553-23f8dcd622cd.png)
 
 ### 3. Usecase Diagram
-
 ![usecase](https://user-images.githubusercontent.com/18122083/168532588-5f862f14-2f61-4449-b2d4-d06fbac41203.jpg)
 
 ### 4. Component Diagram
-
 ![ComponentDiagram drawio](https://user-images.githubusercontent.com/18122083/168532571-b5beeb09-930b-4669-b350-c78cbde6a38b.png)
 
 
