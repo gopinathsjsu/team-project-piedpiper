@@ -78,7 +78,9 @@
 ### Sprint 7 (May 11 - May 15):
 
 ### 1. What tasks did I work on?
-
+       Tested the database by fetching and posting data involved in all workflows and deployed the frontend on AWS.
 ### 2. What am I planning to work on next?
+       Configure the routings on the cloud and verify if frontend deployment works as expected. 
 
 ### 3. What tasks blockers did I have?
+       No blockers
