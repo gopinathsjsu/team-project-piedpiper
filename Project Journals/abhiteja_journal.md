@@ -4,8 +4,7 @@
 
 ### 1. What tasks did I work on?
       Collaborative research on how to proceed with the project and decided on which cloud platform could be potentially used for the application deployment. 
-      Primarily worked on gathering frontend requirements.
-      Also, decided on the areas each individual is comfortable working on.
+      Primarily worked on gathering frontend requirements. Also, decided on the areas each individual is comfortable working on.
       
 ### 2. What am I planning to work on next?
        Decide on the tech stack to be used for building the application and focus on low level design.
@@ -17,22 +16,25 @@
 ## Sprint 2 (Mar 24 - Apr 2):
 
 ### 1. What tasks did I work on?
-       
+       Finalized the tech stack to be React, Spring, MongoDB. Worked on user and admin signup views.
 
 ### 2. What am I planning to work on next?
+       Enhance the developed views by adding striking css and work on AJAX calls to post the data to backend.
 
 ### 3. What tasks blockers did I have?
-
+       No blockers.
 
 
 ## Sprint 3 (Apr 3 - Apr 12):
 
 ### 1. What tasks did I work on?
+      Developed booking summary page and worked on posting data from signup page to backend.
 
 ### 2. What am I planning to work on next?
+      Recheck the low level design to verify if we need any more attributes to be added into the database and on the frontend.
 
 ### 3. What tasks blockers did I have?
-
+       No blockers.
 
 
 ### Sprint 4 (Apr 13 - Apr 22):
