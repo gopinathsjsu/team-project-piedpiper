@@ -42,9 +42,23 @@ https://github.com/gopinathsjsu/team-project-piedpiper/blob/main/Documentation/P
 | Sandhya | https://github.com/gopinathsjsu/team-project-piedpiper/blob/main/Project%20Journals/sandhya_journal.md  |
 
 ## UML Diagrams
-### Architecture Diagram
+https://github.com/gopinathsjsu/team-project-piedpiper/tree/main/UML%20Diagrams
+### 1. Architecture Diagram
 <img width="821" alt="arch" src="https://user-images.githubusercontent.com/18122083/168495457-39ff3fd2-701a-4901-88fe-6e293d877699.png">
 
+### 2. Class Diagram
+
+### 3. Usecase Diagram
+
+![usecase](https://user-images.githubusercontent.com/18122083/168532588-5f862f14-2f61-4449-b2d4-d06fbac41203.jpg)
+
+### 4. Component Diagram
+
+![ComponentDiagram drawio](https://user-images.githubusercontent.com/18122083/168532571-b5beeb09-930b-4669-b350-c78cbde6a38b.png)
+
+
+## Wireframes
+https://github.com/gopinathsjsu/team-project-piedpiper/tree/main/WireFrames
 
 ## Feature Set
 | Feature  | Implementation |
