@@ -32,6 +32,7 @@
 
 ### 2. What am I planning to work on next?
       Recheck the low level design to verify if we need any more attributes to be added into the database and on the frontend.
+      Planning to develop hotel booking page.
 
 ### 3. What tasks blockers did I have?
        No blockers.
@@ -40,30 +41,39 @@
 ### Sprint 4 (Apr 13 - Apr 22):
 
 ### 1. What tasks did I work on?
+      Developed hotel booking page and decided on how to implement dynamic pricing for various selections on the frontend.
 
 ### 2. What am I planning to work on next?
+       Collaborate with my teammate Santosh to implement dynamic pricing in the backend and fetch the data to display it for the user.
+       Also, planning to work on integration of all the developed views with the backend.
 
 ### 3. What tasks blockers did I have?
+       Implemented the flow right after backend logic for dynamic pricing was developed.
 
 
 
 ### Sprint 5 (Apr 22 - May 1):
 
 ### 1. What tasks did I work on?
+       Worked on integration with backend. Integrated signup pages, booking summary page and hotel booking page with backend.
+       Worked on state management.
 
 ### 2. What am I planning to work on next?
-
+       Planning to work on customer loyalty by developing a view where the customer can view the reward points.
+       Recheck the low level design to verify if we need any attributes to be added for customer loyalty implementation.
 ### 3. What tasks blockers did I have?
-
+       No blockers.
 
 ### Sprint 6 (May 2 - May 11):
 
 ### 1. What tasks did I work on?
-
+       Developed a view for customer loyalty where in a customer can view the reward points based on his/her previous bookings.
+       Worked with Santosh and decided on how the reward points can be shown on the frontend.
 ### 2. What am I planning to work on next?
+       Test the entire workflow and refactor the AJAX calls if required. Also, deploy the frontend if everything works as required.
 
 ### 3. What tasks blockers did I have?
-
+       No blockers.
 
 ### Sprint 7 (May 11 - May 15):
 
